@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
-"""
-Using corotines async and await to make a delay function
-"""
+""" Using corotines async and await to make a delay function """
 import random
 import asyncio
 
 
-async def wait_random(max_delay=10):
+async def wait_random(max_delay: int = 10) -> float:
     """
     Function to create a delay between 0
     and a number inputed by user
